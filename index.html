@@ -32,5 +32,16 @@ body {
 }
 </style>
 <div class="hit-the-floor">Ремонт бытовой техники в Кривом Роге</div>
-
+<div id="data"></div>
+<script>
+(function () {
+var str = 'Телефоны',
+	len = str.length,
+	i = 0,
+	tId = setInterval(function () {
+	  data.innerHTML += str[i++];
+	  if (i == len) clearInterval(tId);
+	}, 200);
+}());
+</script>
 
